@@ -15,4 +15,21 @@ public class RandomTester {
             System.out.println(random.nextInt());
         }
     }
+
+    public int lanzarDado() {
+        return random.nextInt(6) + 1;
+    }
+
+    public String getRespuesta() {
+        int a = random.nextInt(3);
+        if (a == 0) {
+            return("Si");
+        } 
+        else if(a == 1) {
+            return("no");
+        } 
+        else{
+            return("Quizás");
+        }
+    }
 }
