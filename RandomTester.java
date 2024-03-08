@@ -22,14 +22,16 @@ public class RandomTester {
 
     public String getRespuesta() {
         int a = random.nextInt(3);
+        String respuesta = "";
         if (a == 0) {
-            return("Si");
+            respuesta = "si";
         } 
         else if(a == 1) {
-            return("no");
+            respuesta = "no";
         } 
         else{
-            return("Quizás");
+            respuesta = "quizás";
         }
+        return respuesta;
     }
 }
