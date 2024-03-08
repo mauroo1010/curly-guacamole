@@ -34,4 +34,11 @@ public class RandomTester {
         }
         return respuesta;
     }
+     public int getNumeroEntre1Y(int max) {
+        return random.nextInt(max) + 1;
+    }
+
+    public int getNumeroEntre(int min, int max) {
+        return random.nextInt(max + 1 -min) + min;
+    }
 }
